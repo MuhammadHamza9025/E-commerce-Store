@@ -1,0 +1,627 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.open{
+  display: block;
+  top: 66px ;
+  position: absolute;
+  z-index: 98;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: aquamarine;
+  width: 100%;
+  border: 2px solid  black;
+}
+.open button{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+
+/* Services */
+.maindiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+  
+  
+}
+.left{
+
+  top: 66px;
+  /* border: 2px solid red; */
+  position: fixed;
+  min-height: 100vh;
+  background-color: azure;
+  max-width: 220px;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  
+  align-items: center;
+  padding: 2em 0em;
+}
+.servicenav{
+ 
+  margin-top: 3em;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+.input{
+  display: flex;
+  border: 2px solid rgb(35, 34, 34);
+  /* border-radius: 10px; */
+  padding: 0em 1em;
+  box-sizing: border-box;
+  width: 200px;
+  margin-right: 3em;
+  justify-content: center;
+  align-items: center;
+}
+.fa-search{
+  color: rgb(121, 121, 121);
+  margin-top:0.1em;
+  font-size: x-large;
+}
+.fa-filter{
+  margin-left: 3em;
+  color: rgb(121, 121, 121);
+  margin-top:0.1em;
+  font-size: x-large;
+  cursor: pointer;
+}
+.servicenav input{
+width: 500px;
+height: 30px;
+outline: none;
+border: none;
+background-color: transparent;
+font-size: large;
+outline: none;
+padding: 0em 2em;
+
+box-sizing: border-box;
+  width: 100%;
+
+}
+.filterscategory{
+  /* background-color: black; */
+  color: white;
+  font-weight: bold;
+  min-height: 100vh;
+  width: 300px;
+
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  cursor: pointer;
+  
+}
+
+element.style {
+}
+.filterscategory::before{
+  position: fixed;
+  content: "";
+  min-height: 100vh;
+  width: 300px;
+  z-index: -1;
+  opacity: 0.6;
+  background-color: black;
+}
+.filterclose{
+  display: none;
+}
+.filterscategory button {
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(153, 153, 153);
+  height: 30px;
+  width: 30px;
+  color: white;
+  border: none;
+  right: -1px;
+
+}
+.filterscategory button:hover{
+  background-color: rgb(16, 138, 16);
+}
+.right{
+
+ 
+  margin-top: 100px;
+  width: 80vw;
+  
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container{
+  display: block;
+height: 260px;
+ 
+  overflow: hidden;
+
+  width: 190px;
+  margin: 1em;
+  background-color: white;
+  box-shadow: 1px 0.7px 10px 0.1px rgb(126, 125, 125);
+}
+.picture{
+  height: 100px;
+  width: 100%;
+  border-radius: 4px;
+cursor: pointer;
+}
+.picture img{
+  height: 100%;
+  width: 100%;
+}
+.title{
+  font-size: smaller;
+}
+.title , .btn , .price{
+  margin: 0.8em 1em;
+}
+.btn button{
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.btn{
+  margin-bottom: 1px;
+}
+.price{
+  color: red;
+  margin: 1em;
+}
+.hidr{
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+
+  position:fixed;
+  width: 80vw;
+  margin: auto;
+  background-color: antiquewhite;
+  border: 2px solid red;
+  min-height: 200vh;
+  display: none;
+}
+.hidebtn button{
+  border-radius: 50%;
+  background-color: rgb(153, 153, 153);
+  height: 30px;
+  width: 30px;
+  color: white;
+  border: none;
+}
+.hidebtn button:hover{
+  background-color: green;
+}
+.hidebtn{
+position: absolute;
+top: 3px;
+right: 9px;
+
+}
+.close{
+ 
+  top: 56px;
+  left: 9%;
+ 
+
+  position:absolute;
+  max-width: 100vw;
+  display: flex;
+  z-index: 70;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  position: fixed;
+
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 19px 1px rgb(126, 125, 125);
+
+  /* border: 2px solid red; */
+  max-height: 100vh;
+  height: 89%;
+  
+}
+.view{
+  display: block;
+}
+
+.nohide{
+  display: none;
+}
+
+/* View item  */
+.viewcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.viewpicture{
+  height: 300px;
+  width: 400px;
+
+}
+.viewpicture img{
+  height: 100%;
+  /* border: 2px solid red; */
+  width: 100%;
+}
+.combine{
+  display: flex;
+  /* border: 2px solid red; */
+  flex-direction: column;
+  /* justify-content: center; */
+align-items: center;
+}
+.viewprice{
+  max-width: 400px;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.viewtitle{
+  font-size: larger;
+  font-weight: bolder;
+  margin: 2em;
+}
+.viewbtn button{
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+button:hover{
+background-color: gainsboro;
+}
+.radiobuttons{
+  /* border: 2px solid red; */
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+margin-top: 3em;
+}
+.radiobuttons input{
+  width: 20px;
+  margin: 0em 1em;
+}
+.lable1{
+  display: flex;
+  margin: 1em 2em;
+
+}
+.radiobuttons h1{
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  footer{
+    font-size: 10px;
+  }
+  .servicenav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+
+  section{
+    /* border: 2px solid red; */
+    justify-content: center;
+  }
+  section .container{
+    width: 300px;
+  }
+ .close{
+  display: flex;
+  flex-direction: column;
+ } 
+ .viewcontainer{
+  display: flex;
+  flex-direction: column;
+ }
+ .viewpicture{
+  width: 80%;
+  /* border: 2px solid red; */
+  margin: auto;
+  height: 80%;
+
+ }
+ .viewprice{
+    /* border: 2px solid red; */
+margin: 0em;
+    padding: 0em 1em;
+    box-sizing: border-box;
+ }
+ .viewtitle{
+    /* border: 2px solid red; */
+text-align: center;
+ }
+ .container{
+  width: 200px;
+  margin: 1em;
+ }
+
+.details p{
+  /* border: 2px solid red; */
+  max-width: 100%;
+ 
+}
+
+}
+@media screen and (max-width: 1000px) {
+  .mainsection{
+    display: flex;
+    flex-direction: column;
+   }
+  .details{
+    text-align: center;
+    margin: 3em 0em;
+    max-width: 86vw;
+  
+    /* border: 2px solid rgb(0, 0, 0); */
+    overflow: hidden;
+  
+    /* width: 80px; */
+  }
+  .details h2{
+    font-size: small;
+  }
+ 
+  
+
+.images {
+   width: 80vw;
+    height: 65px;
+    overflow: hidden;
+    display: none;
+}
+
+.images img{
+  width: 100%;
+  height: 100%;
+}
+footer{
+  border: 2px solid red;
+ 
+
+}
+
+}
+
+
+
+/* Home  */
+.mainsection{
+      /* border: 2px solid red; */
+/* height: 100vh; */
+padding: 5em;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+.details{
+  /* border: 2px solid red; */
+width: 500px;
+/* display: none; */
+  
+}
+.details h2{
+
+  font-size: xx-large;
+}
+.details p{
+  margin: 2em 0em;
+ 
+}
+.details button{
+  border: 1px solid blue;
+  background-color: rgb(60, 60, 187);
+  width: 100px;
+  height: 45px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+}
+.details button:hover{
+  background-color: rgb(98, 98, 176);
+}
+.images{
+  
+width: 400px;
+height: 400px;
+overflow: hidden;
+}
+.images img{
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+.images:before{
+  content: "";
+  width: 400px;
+  height: 400px;
+position: absolute;
+background: url('https://media.istockphoto.com/id/1249219777/photo/shopping-online-concept-parcel-or-paper-cartons-with-a-shopping-cart-logo-in-a-trolley-on-a.webp?b=1&s=612x612&w=0&k=20&c=Z3RsrcQm2G19uOggBLXRtJZ_2mwvHyJikV4Ib3mqgd0=');
+/* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVkEgiSvys0yuTFEeH_wqlegUjwi_SH1RPUg&usqp=CAU'); */
+background-size: cover;
+background-position: center;
+z-index: -1;
+
+}
+.cartocon i{
+  color: white;
+}
+.pro{
+  background-color: aliceblue;
+padding: 2em;
+}
+.pro h2{
+  text-align: center;
+  margin: 2em;
+}
+.products{
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.img {
+  width: 250px;
+  overflow: hidden;
+  /* border: 2px solid red; */
+  box-shadow: 1px 1px 10px 1px gray;
+  margin: 1em 0.3em;
+  box-sizing: border-box;
+
+
+}
+.img img{
+  height: 100%;
+}
+
+footer{
+  display: flex;
+  height: 300px;
+  margin-top: 3em;
+  background-color: rgb(3, 18, 3);
+  color: aliceblue;
+  font-weight: 400;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3px solid white;
+}
+.links{
+  margin-left: 2em;
+}
+.links,
+.Products,
+.Stores{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+}
+.links a,
+.Products a,
+.Stores a{
+  color: white;
+  text-decoration: none;
+  margin: 1em;
+}
+
+
+
+/* Cart  */
+.cartsection{
+  display: flex;
+  margin-top: 2em;
+  
+  flex-direction: column;
+  align-items: center;
+}
+.cartcontainer{
+  width: 70vw;
+  display: flex;
+  height: 110px;
+  align-items: center;
+  background-color: aliceblue;
+  border: 1px solid whitesmoke;
+  margin: 0.5em;
+  justify-content: space-around;
+
+}
+.cartpicture{
+  height: 100%;
+  background-color: aliceblue;
+
+}
+.cartprice{
+  color: red;
+  font-weight: 400;
+}
+.carttitle{
+  font-size: small;
+}
+.cartpicture img{
+  height: 100%;
+}
+.cartcontainer i{
+  font-size: x-large;
+}
+.cartcontainer i:hover{
+  font-size: xx-large;
+  color: red;
+}
+.cartmenu{
+  
+  position: absolute;
+  top: 70px;
+width: 98vw;
+display: flex;
+justify-content: center;
+align-items: center;
+  height: 100vh;
+  margin: auto;
+  
+}
+.cartmenudel{
+  display: none;
+}
+.cartmenuopen{
+  display: flex;
+}
+.cartmenu .menu{
+display: flex;
+flex-direction: column;
+  width: 300px;
+  height: 150px;
+  background-color: rgb(60, 65, 65);
+}
+.menu span{
+  text-align: center;
+  margin-top: 2em;
+  color: white;
+}
+.manubtn{
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+
+  
+}
+.manubtn button{
+  width: 60px;
+  height: 30px;
+  border: none;
+}
+
+.b2 i{
+  color: green;
+  font-size:28px;
+
+}
+.b1 i{
+  font-size:28px;
+  color:red
+}
